@@ -1,0 +1,34 @@
+body {
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='1080' preserveAspectRatio='none' viewBox='0 0 1920 1080'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1920' height='1080' x='0' y='0' fill='rgba(49%2c 176%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c879.782C164.57%2c881.892%2c237.573%2c666.29%2c352.461%2c548.44C439.735%2c458.916%2c540%2c384.043%2c593.458%2c271.023C647.401%2c156.976%2c662.121%2c31.643%2c656.515%2c-94.393C650.43%2c-231.193%2c651.429%2c-383.307%2c559.824%2c-485.09C468.508%2c-586.552%2c312.3%2c-579.254%2c182.398%2c-621.19C48.208%2c-664.51%2c-74.996%2c-738.491%2c-215.974%2c-735.539C-385.274%2c-731.994%2c-593.197%2c-737.613%2c-695.67%2c-602.801C-799.096%2c-466.735%2c-714.976%2c-270.595%2c-698.707%2c-100.459C-686.09%2c31.48%2c-675.209%2c163.053%2c-611.329%2c279.184C-550.463%2c389.835%2c-436.785%2c450.97%2c-346.699%2c539.474C-228.795%2c655.308%2c-165.27%2c877.663%2c0%2c879.782' fill='%2319a7ff'%3e%3c/path%3e%3cpath d='M1920 1860.112C2072.475 1843.675 2224.511 1836.213 2360.8 1765.899 2506.645 1690.655 2677.428 1604.219 2722.089 1446.3020000000001 2766.746 1288.396 2620.582 1144.286 2581.685 984.864 2547.726 845.681 2595.401 683.979 2508.331 570.2080000000001 2420.177 455.02099999999996 2260.669 434.015 2123.6639999999998 386.384 1979.381 336.222 1830.576 233.96500000000003 1686.408 284.457 1542.317 334.923 1487.586 506.207 1408.562 636.837 1341.99 746.8820000000001 1291.795 860.246 1262.346 985.444 1230.342 1121.503 1206.616 1257.247 1230.223 1395.011 1259.373 1565.125 1270.4769999999999 1771.518 1413.578 1868.008 1556.451 1964.344 1748.675 1878.5810000000001 1920 1860.112' fill='%2349b9ff'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1920' height='1080' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+.originalUrlLink {
+  max-width: 50%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 1.5em;
+  white-space: nowrap;
+}
+
+.copyBtn {
+  background-color: #d3e0ff;
+  color: #2a5bd7;
+}
+
+.copyBtn:hover {
+  background-color: #a1bdff;
+  color: #2a5bd7;
+}
+
+.navbar {
+  background-color: rgb(0, 140, 228);
+}
+
+form {
+  margin: 10px 300px;
+}

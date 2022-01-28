@@ -21,9 +21,11 @@ db.once("open", () => {
 const app = express();
 
 app.set("view engine", "ejs");
+app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false }));
 
 app.get("/", async (req, res) => {
+  console.log("inside the /")
   const allUrls = await ShortUrl.find({});
   res.render("index", { allUrls });
 });
@@ -35,8 +37,10 @@ app.post("/newUrl", async (req, res) => {
 });
 
 app.get("/:shortUrl", async (req, res) => {
+  console.log("inside the params")
   const shortUrl = req.params.shortUrl;
   const url = await ShortUrl.findOne({ shortUrl });
+  console.log("url: ",url)
   url.clicks++;
   await url.save();
   res.redirect(url.originalUrl);
