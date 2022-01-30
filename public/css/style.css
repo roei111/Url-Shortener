@@ -8,11 +8,11 @@ body {
 }
 
 .originalUrlLink {
-  max-width: 50%;
   text-overflow: ellipsis;
   overflow: hidden;
   height: 1.5em;
   white-space: nowrap;
+  
 }
 
 .copyBtn {
@@ -25,10 +25,36 @@ body {
   color: #2a5bd7;
 }
 
+.copiedBtn {
+  background-color: #649949 !important;
+  color: white !important;
+}
+
 .navbar {
   background-color: rgb(0, 140, 228);
 }
 
 form {
-  margin: 10px 300px;
+  margin: 10px 200px;
 }
+
+.container{
+  width: 95%;
+}
+
+@media screen and (max-width: 1200px) {
+  form {
+    margin: 10px 100px;
+  }
+}
+@media screen and (max-width: 992px) {
+  form {
+    margin: 10px 50px;
+  }
+}
+@media screen and (max-width: 576px) {
+  form {
+    margin: 10px 0;
+  }
+}
+

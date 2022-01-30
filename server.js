@@ -64,7 +64,7 @@ app.get(
     const shortUrl = req.params.shortUrl;
     const url = await ShortUrl.findOne({ shortUrl });
     if (!url) {
-      return res.render("404", { message: "the URL is not found!sssss" });
+      return res.render("404", { message: "The URL is not found!" });
     }
     url.clicks++;
     await url.save();
