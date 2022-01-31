@@ -42,7 +42,6 @@ app.use(session(sessionConfig));
 app.get(
   "/",
   catchAsync(async (req, res) => {
-    console.log("req.session: ",req.session)
     //gets form validation error and prev input value from the session
     const formError = req.session.formError;
     const prevInputValue = req.session.prevInputValue;
