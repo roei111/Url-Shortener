@@ -2,13 +2,16 @@
     <form method="POST" action="/newUrl">
       <label for="originalUrl" class="form-label">Enter a long URL</label>
       <input
-        type="url"
+        type="text"
         name="originalUrl"
         id="originalUrl"
-        class="form-control mb-2"
+        class="form-control mb-2 <%= formErrorMessage ? 'is-invalid' : '' %>"
         placeholder="Enter the link here"
-        required
+        value="<%= prevInputValue %>"
       />
+      <div class="invalid-feedback mb-1">
+        <%= formErrorMessage %>
+      </div>
       <button type="submit" class="btn btn-primary w-100">Shorten URL</button>
     </form>
   </div>

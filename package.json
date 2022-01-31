@@ -14,7 +14,8 @@
     "express": "^4.17.2",
     "express-session": "^1.17.2",
     "mongoose": "^6.1.8",
-    "shortid": "^2.2.16"
+    "shortid": "^2.2.16",
+    "valid-url": "^1.0.9"
   },
   "devDependencies": {
     "nodemon": "^2.0.15"

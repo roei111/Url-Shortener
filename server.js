@@ -7,6 +7,7 @@ const mongoose = require("mongoose");
 const session = require("express-session");
 const { catchAsync } = require("./utils/utils");
 const ShortUrl = require("./models/shortUrl");
+const validUrl = require("valid-url");
 
 const dbUrl = process.env.DB_URL;
 mongoose.connect(dbUrl, {
@@ -41,18 +42,38 @@ app.use(session(sessionConfig));
 app.get(
   "/",
   catchAsync(async (req, res) => {
+    console.log("req.session: ",req.session)
+    //gets form validation error and prev input value from the session
+    const formError = req.session.formError;
+    const prevInputValue = req.session.prevInputValue;
+    //Resets session variable  
+    req.session.formError = null;
+    req.session.prevInputValue = null;
+ 
     const allUrls = await ShortUrl.find({});
     if (!allUrls) {
-      return res.render("404", { message: "Can't find any URLs!" });
+      return res.render("404", { message: "Can't find any URL!" });
     }
-    res.render("index", { allUrls });
+    res.render("index", { allUrls, formErrorMessage: formError, prevInputValue });
   })
 );
 
 app.post(
   "/newUrl",
   catchAsync(async (req, res) => {
-    const newUrl = new ShortUrl({ originalUrl: req.body.originalUrl });
+    const enteredUrl = req.body.originalUrl;
+    //Validate, save the data in the session to access it in the route & redirect
+    if (!enteredUrl) { //Check if the user entered any url
+      req.session.formError = "This field is required!";
+      return res.redirect("/");
+    } else if (!validUrl.isUri(enteredUrl)) { //Check if the entered url is valid
+      req.session.formError = "Invalid URL!";
+      //Keep the entered url value to show it in the form (better ux) 
+      req.session.prevInputValue = enteredUrl;
+      return res.redirect("/");
+    }
+
+    const newUrl = new ShortUrl({ originalUrl: enteredUrl });
     await newUrl.save();
     res.redirect("/");
   })
