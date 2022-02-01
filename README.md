@@ -23,6 +23,7 @@
 - MongoDB
 - Mongoose
 - Ejs
+- Bootstrap
 
 ## Usage
 
