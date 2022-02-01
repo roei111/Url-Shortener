@@ -7,7 +7,7 @@
   <img src="public/images/iphoneMockup.png" height="500">
 </p>
 <p align="center">
-  <a href="https://youtu.be/iIN-IuodrzM" target="_blank" rel="noopener noreferrer"><img src="public/images/youtube-embed.png" alt="Url Shortener - Roei Yaacobi - Youtube Video"></a>
+  <a href="https://youtu.be/iIN-IuodrzM"><img src="public/images/youtube-embed.png" alt="Url Shortener - Roei Yaacobi - Youtube Video"></a>
 </p>
 
 
