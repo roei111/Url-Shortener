@@ -10,12 +10,19 @@
   <a href="https://youtu.be/iIN-IuodrzM"><img src="public/images/youtube-embed.png" alt="Url Shortener - Roei Yaacobi - Youtube Video"></a>
 </p>
 
-
 ## Features
 
 - Shorten a Long URL using the web app
 - Track the number of clicks
 - Full responsive
+
+## Technologies
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- Ejs
 
 ## Usage
 
