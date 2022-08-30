@@ -4,11 +4,16 @@
 
 <img src="public/images/ogImage.png">
 <p align="center">
-  <img src="public/images/iphoneMockup.png" height="700">
+   <img src="https://res.cloudinary.com/dq6iduc79/image/upload/v1661886833/portfolio-avif/image_4__iphone13midnight_portrait_yzhrzg.png" height=500>
+  <img src="https://res.cloudinary.com/dq6iduc79/image/upload/v1661886834/portfolio-avif/image_5__iphone13midnight_portrait_tnxtdf.png" height=500>
+  <img src="https://res.cloudinary.com/dq6iduc79/image/upload/v1661886834/portfolio-avif/image_6__iphone13midnight_portrait_lgpgoy.png" height=500>
 </p>
-<p align="center">
-  <a href="https://youtu.be/iIN-IuodrzM"><img src="public/images/youtube-embed.png" alt="Url Shortener - Roei Yaacobi - Youtube Video"></a>
-</p>
+
+
+
+https://user-images.githubusercontent.com/71691473/187525165-c3d88c95-296b-4ea6-afe4-1144e7c78bb9.mp4
+
+
 
 ## Features
 
