@@ -3,11 +3,8 @@
 <h4>A URL-Shortener created using Node.js, Express.js & MongoDB</h4>
 
 <img src="public/images/ogImage.png">
-<p align="center">
-   <img src="https://res.cloudinary.com/dq6iduc79/image/upload/v1661886833/portfolio-avif/image_4__iphone13midnight_portrait_yzhrzg.png" height=500>
-  <img src="https://res.cloudinary.com/dq6iduc79/image/upload/v1661886834/portfolio-avif/image_5__iphone13midnight_portrait_tnxtdf.png" height=500>
-  <img src="https://res.cloudinary.com/dq6iduc79/image/upload/v1661886834/portfolio-avif/image_6__iphone13midnight_portrait_lgpgoy.png" height=500>
-</p>
+
+![url-shortener-mobile-min](https://user-images.githubusercontent.com/71691473/190929396-eebf7cbc-e9c9-4f3e-a2e7-3eda6cb3f31f.png)
 
 
 
